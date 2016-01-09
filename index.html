@@ -2,41 +2,58 @@
 <html>
 <head>
 
-    <title>My Channel Website</title>
-	
-	<meta name="author" content="CoolMinecraftGuy" />
-	<meta name="description" content="Welcome to the official channel website. WARNING: This is still in beta.I will later be selling merchandise" />
-	
-    <style>
-    *{ border: 5px solid red; }
-    </style>
+<!-- Styles -->	
+<style style="text/css">
+.example1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
 </head>
 <body>
-	<div id="page">
-		<div id="logo">
-			<h1><a href="/">My Channel Website</a></h1>
-		</div>
-		<div id="nav">
-			<ul>
-				<li><a class="" href="home.html">Home</a></li>
-				<li><a class="" href="about.html">About</a></li>
-				
-			</ul>	
-		</div>
-		<div id="content">
-        
-			<p>
-				This is my channel website! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!. WARNING: This is still in beta.I will later be selling merchandise
-			</p>
-			
-				
-			
-		</div>
-		<div id="footer">
-			<p>
-				Webpage made by CoolMinecraftGuy (and his awesome dad)
-			</p>
-		</div>
-	</div>
+
+<!-- HTML -->	
+<div class="example1">
+<h3>Wow, Why`d you come here? You`re just wasting your time here. Why are you still reading me? Don`t you have better things to do?Read,  Play ball,  Play videogames like Mario Kart, WHY ARE YOU EVEN STILL HERE?</h3>
+</div>
+
 </body>
-</html>+
+</html>
